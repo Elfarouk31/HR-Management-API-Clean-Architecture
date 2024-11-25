@@ -13,7 +13,7 @@ namespace HR.LeaveManagement.Application.Dtos.LeaveAllocation
     {
         public int NumberOfDays { get; set; }
         public LeaveTypeDto LeaveType { get; set; }
-        public int LeaveTyeId { get; set; }
+        public int LeaveTypeId { get; set; }
         public int Period { get; set; }
     }
 }

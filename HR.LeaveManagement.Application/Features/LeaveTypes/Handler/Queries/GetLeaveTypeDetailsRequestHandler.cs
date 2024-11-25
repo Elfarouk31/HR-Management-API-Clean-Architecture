@@ -23,7 +23,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveTypes.Handler.Queries
         }
         public async Task<LeaveTypeDto> Handle(GetLeaveTypeDetailsRequest request, CancellationToken cancellationToken)
         {
-            var leaveTypeDto = _mapper.Map<LeaveTypeDto>(await _leaveTypeRepository.GetLeaveTypeWithDetails(request.Id));
+            var leaveTypeDto = _mapper.Map<LeaveTypeDto>(await _leaveTypeRepository.Get(request.Id));
             return leaveTypeDto;
         }
     }
